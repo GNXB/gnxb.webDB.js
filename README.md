@@ -1,5 +1,5 @@
 # webDB
-Class for using web db easily 
+Class for using web db easily and simplify your code.
 
 # Author
 Apiwith Potisuk (po.apiwith@gmail.com)
@@ -21,7 +21,7 @@ var mydb = new gnxb.webDB(dbname, dbversion, dbdescription, dbsize, callback);
 
 # APIs
 ## `.db`
-An object that contain `openDatabase()` returned pointer
+An object contains `openDatabase()` returned pointer.
 
 ## `.query(sql, params, next)`
 Pass `sql` string command to excute with **read/write** permission that can make change to the database. `params` is prepared parameters. It will callback with 1 parameter to `next()`.
