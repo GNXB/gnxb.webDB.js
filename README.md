@@ -20,18 +20,22 @@ var mydb = new gnxb.webDB(dbname, dbversion, dbdescription, dbsize, callback);
 ```
 
 # APIs
+- [`.db`](https://github.com/GNXB/webDB#db):Object
+- [`.query(sql, params, next)`](https://github.com/GNXB/webDB#querysql-params-next)
+- [`.select(sql, params, next)`](https://github.com/GNXB/webDB#selectsql-params-next)
+
 ## `.db`
 An object contains `openDatabase()` returned pointer.
 
 ## `.query(sql, params, next)`
 Pass `sql` string command to excute with **read/write** permission that can make change to the database. `params` is prepared parameters. It will callback with 1 parameter to `next()`.
 > `sql` and `params` must be passed.
-> See example code at the end.
+> See example code [here](https://github.com/GNXB/webDB#example).
 
 ## `.select(sql, params, next)`
 Pass `sql` string command to excute with **read only** permission that cannot make any change to the database. `params` is prepared parameters. It will callback with 1 parameter to `next()`.
 > `sql` and `params` must be passed.
-> See example code at the end.
+> See example code [here](https://github.com/GNXB/webDB#example).
 
 # Example
 ```javascript
