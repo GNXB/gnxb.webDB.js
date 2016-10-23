@@ -51,3 +51,8 @@ mydb.select('SELECT * FROM employees', [], function(res) {
 	}
 });
 ```
+
+# View schemas
+Use **Google Chrome Developer Tools** to view your created schema. Go to **Application** tab, Storage -> Web SQL.
+
+![alt tag](https://raw.githubusercontent.com/GNXB/webDB/master/screenshots/Using%20Google%20Chrome%20Developer%20Tools%20to%20verify%20data.png)
