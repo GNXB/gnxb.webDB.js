@@ -3,11 +3,12 @@ Class for using web db easily
 
 # Author
 Apiwith Potisuk (po.apiwith@gmail.com)
-*GNXB, 2016 All Right Reserved.*
+
+**GNXB**, 2016 All Right Reserved.
 
 # Get Starting
 To put parameters, its looks like using `openDatabase()`. Refer to [read more](https://www.tutorialspoint.com/html5/html5_web_sql.htm)
-```
+```javascript
 var dbname = 'MyDB',
 	dbversion = '1.0.0', // It helps when your schema has more than 1 version.
 	dbdescription = 'My First Database',
@@ -18,7 +19,7 @@ var mydb = new gnxb.webDB(dbname, dbversion, dbdescription, dbsize, callback);
 // Important!: dbname, dbversion, dbdescription and dbsize must be passed.
 ```
 
-# API
+# APIs
 ## `.db`
 An object that contain `openDatabase()` returned pointer
 
@@ -33,7 +34,7 @@ Pass `sql` string command to excute with **read only** permission that cannot ma
 > See example code at the end.
 
 # Example
-```
+```javascript
 var mydb = new gnxb.webDB('Company', '1.0.0', 'All-About-Company', 5000000);
 
 // Create table 'employees'
